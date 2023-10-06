@@ -5,7 +5,7 @@ const configDotenv = require("dotenv");
 
 //  load .env variables into process.env
 configDotenv.config()
-console.log(process.env)
+// console.log(process.env)
 
 // import the db.config to connect db in server
 const {init} = require('./db.config');

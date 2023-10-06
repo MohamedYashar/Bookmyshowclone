@@ -5,7 +5,7 @@ const { default: mongoose } = require("mongoose");
 
 async function init (){
 
-    const URL = `${process.env.MongoDB_url}/${process.env.DB_name}`
+    let URL = `${process.env.MongoDB_url}/${process.env.DB_name}`
     if(process.env.Node_Environment ==="production"){
         URL= `mongodb+srv://${process.env.MongoDB_username}:${ process.env.MongoDB_password}@cluster0.iffbd.mongodb.net/${process.env.DB_name}`
     }
