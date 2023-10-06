@@ -38,7 +38,7 @@ HTTP_SERVER.get ("/", (req, res, next)=>{
 
     console.log( " Http server route is enabled")
     return res.status(200).json( {
-        miriginajumbo : 'Welcome to Bookmyshow Management System'
+        message : 'Welcome to Bookmyshow Management System'
     })
 
 })
